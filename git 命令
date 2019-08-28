@@ -1,0 +1,33 @@
+mkdir xx      --创建文件夹
+cd  进   cd ..  出   pwd 定位  ls 看目录
+git init  库
+git add xxx  提交到缓存区    git add .（全提）
+git status 查看文件提交      绿（缓存） 红 （本地）
+git commit -m '备注' （commit 提交 git）
+clear 清
+git remote add origin https://github.com/liuliang555/1.cs.git             （关联 github 库）
+    关联   添加  别名 地址
+git push -u origin master    
+（-u 第一次 推 加）（origin 别名 同上）
+git pull origin master    （拉取代码）
+git clone x地址x          （克隆）
+
+差异对比
+git diff  本 对 暂
+    diff --cached   库  对 暂
+	diff master     库  对 本 
+版本退回
+git reset --hard HEAD^ （^一个退一次  最多 2）
+    reset --hard obfafd （指定退回版本）
+删除
+git rm xxx 删除文件
+    rm -r xxx 删除文件夹
+分支
+gir checkout -b dev （dev 名字）创建并切换
+    branch  查看当前分支
+	checkout xxx 切换分支
+	merge xxx  合并xxx到当前分支
+	branch -d xxx 删除指定分支
+备注
+不能自动记住密码
+git config --global credential.helper store
